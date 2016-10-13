@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+        <link rel="stylesheet" type="text/css"
+               href="Style.css">
+    </head>
+
+<ul id="navbar">
+	<li class="navitem"><a href="DreamVacation.html">Home</a></li>
+	<li class="navitem"><a class="active" href="Dublin.html">Dublin</a></li>
+	<li class="navitem"><a href="London.html">London</a></li>
+	<li class="navitem"><a href="Paris.html">Paris</a></li>
+	</ul>
+
+<h1>Dublin</h1>
+
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(53.349805, -6.26031);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+     center: myCenter, 
+     zoom: 10
+  };   
+  
+ var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+  }
+  
+  </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<img src="dublin_ireland_2012_metroscenes.com_47.jpg" width="1000" height="361">
+
+<p>	Dublin is on Ireland&rsquo;s east coast at the mouth of the River Liffey. Its historic 
+buildings include Dublin Castle, dating to the 13th century, and imposing St 
+Patrick&rsquo;s Cathedral, founded in 1191. City parks include landscaped St 
+Stephen&rsquo;s Green and huge Phoenix Park, containing Dublin Zoo. The National 
+Museum of Ireland explores Irish heritage and culture. Scholars enjoy walking in the 
+literary footsteps of such writers as Yeats and Joyce, while discerning shoppers have 
+their pick of designer boutiques.</p>
+<h2>Sources</h2>
+<table>
+<tr>
+<li>www.tripadvisor.com</li>
+</tr>
+<tr>
+<li>dublin_ireland_2012_metroscenes.com_47.jpg</li>
+</tr>
+</table>
+</body>
+</html>

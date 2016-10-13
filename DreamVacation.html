@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body> 
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css"
+               href="Style.css">
+    </head>
+ <ul id="navbar">
+	<li class="navitem"><a class="active" href="DreamVacation.html">Home</a></li>
+	<li class="navitem"><a href="Dublin.html">Dublin</a></li>
+	<li class="navitem"><a href="London.html">London</a></li>
+	<li class="navitem"><a href="Paris.html">Paris</a></li>
+	</ul>
+              
+<h1>My Dream Vacation</h1>
+
+<div id="map" style="width:100%;height:500px"></div>
+
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+     center: myCenter, 
+     zoom: 6
+  };
+  
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+  
+  var origin = new google.maps.LatLng(48.856614,2.352222);
+  var marker2 = new google.maps.Marker({position:origin});
+  marker2.setMap(map);
+
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+  var origin = new google.maps.LatLng(53.349805,-6.260310);
+  var marker3 = new google.maps.Marker({position:origin});
+  marker3.setMap(map);
+  
+   var dublin = new google.maps.LatLng(53.349805, -6.26031);
+   var london = new google.maps.LatLng(51.508742,-0.120850);
+   var paris = new google.maps.LatLng(48.856614,2.352222);
+   
+   var flightPath = new google.maps.Polyline({
+    path: [dublin, london, paris],
+    strokeColor: "#0000FF",
+    strokeOpacity: 0.8,
+    strokeWeight: 2
+  });
+  flightPath.setMap(map);
+}
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+<table>
+     <tr>
+     <li>Dublin, Ireland</li>
+     </tr>
+     <tr>
+     <li>London, England</li>
+     </tr>
+     <tr>
+     <li>Paris, France</li>
+     </tr>
+</table>
+
+</body>
+</html>  

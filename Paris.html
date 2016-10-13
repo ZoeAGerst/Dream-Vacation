@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+        <link rel="stylesheet" type="text/css"
+               href="Style.css">
+    </head>
+
+<ul id="navbar">
+	<li class="navitem"><a href="DreamVacation.html">Home</a></li>
+	<li class="navitem"><a href="Dublin.html">Dublin</a></li>
+	<li class="navitem"><a href="London.html">London</a></li>
+	<li class="navitem"><a class="active" href="Paris.html">Paris</a></li>
+	</ul>
+
+<h1>Paris</h1>
+
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(48.856614,2.352222);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+     center: myCenter, 
+     zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+  }
+  </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<img src="paris-france1.jpg" width="800" height="361">
+<p>Paris, France's capital, is a major European city and a global center for art, 
+fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide 
+boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 
+12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and 
+designer boutiques along the Rue du Faubourg Saint-Honor&eacute;. The Grand Palais is 
+one of the most popular exhibition venues in Paris. Whether contemporary or classical, 
+the works on show are by internationally renowned artists. The best tours of Paris 
+are by boat. One can get a one-hour cruise on the Seine in a sightseeing boat or 
+bateaumouche, which points out the main monuments, bridges, and cathedrals and gives 
+a history of the city.</p>
+<h2>Sources</h2>
+<table>
+<tr>
+<li>www.encyclopedia.com</li>
+</tr>
+<tr>
+<li>paris-france1.jpg</li>
+</tr>
+</table>
+</body>
+</html>

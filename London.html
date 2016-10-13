@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+        <link rel="stylesheet" type="text/css"
+               href="Style.css">
+    </head>
+
+<ul id="navbar">
+	<li class="navitem"><a href="DreamVacation.html">Home</a></li>
+	<li class="navitem"><a href="Dublin.html">Dublin</a></li>
+	<li class="navitem"><a class="active" href="London.html">London</a></li>
+	<li class="navitem"><a href="Paris.html">Paris</a></li>
+	</ul>
+
+<h1>London</h1>
+
+<div id="map" style="width:100%;height:500px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+     center: myCenter, 
+     zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+  }
+  </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<img src="london-england-open-campus-main.jpg" width="1000" height="361">
+<p>London, the capital of England and the United Kingdom, is a 21st-century city with 
+history stretching back to Roman times. At its centre stand the imposing Houses of 
+Parliament, the iconic &lsquo;Big Ben&rsquo; clock tower and Westminster Abbey, site of 
+British monarch coronations. Across the Thames River, the London Eye observation wheel 
+provides panoramic views of the South Bank cultural complex, and the entire city. London 
+is one of the leading tourist destinations in the world and in 2015 was ranked as the 
+most visited city in the world with over 65 million visits. It is also the top city in 
+the world by visitor cross-border spending, estimated at US$20.23 billion in 2015. 
+Tourism is one of London's prime industries, employing the equivalent of 350,000 
+full-time workers in 2003, and the city accounts for 54% of all inbound visitor 
+spend in UK.</p>
+<h2>Sources</h2>
+<table>
+<tr>
+<li>wikipedia.org</li>
+</tr>
+<tr>
+<li>london-england-open-campus-main.jpg</li>
+</tr>
+</table>
+</body>
+</html>
